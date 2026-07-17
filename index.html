@@ -340,89 +340,89 @@ function go(tab,opts={}){ state.tab=tab; if('day' in opts)state.day=opts.day; re
 const SHOPPING={lists:[
   {id:"mom",label:"Mom",flag:"🇫🇷",accent:"#A8423C",note:"Strasbourg pharmacy — mature / blonde / dry-skin focus",tiers:[
     {title:"⭐ Must",items:[
-      {n:"Caudalie Vinoperfect Serum",p:"€45–50",d:"Brightening serum that fades dark spots and evens tone (viniferine + niacinamide)."},
-      {n:"La Roche-Posay Anthelios UVMune 400 SPF50+",p:"€18–22",d:"High-protection sunscreen with a next-gen UVA filter and elegant textures.",s:"Standard Tinted if you want the tinted version; complexion Fair/Light."},
-      {n:"Avène DermAbsolu Cream",p:"€30–38",d:"Firming, radiance-boosting anti-aging day cream for mature skin."},
-      {n:"La Roche-Posay Rosaliac AR Serum",p:"€22–28",d:"Targets persistent facial redness and visible vessels."}]},
+      {n:"Caudalie Vinoperfect Serum",p:"€45–50",d:"Brightening serum that fades dark spots and evens tone (viniferine + niacinamide).",w:"Much cheaper than the US Sephora price."},
+      {n:"La Roche-Posay Anthelios UVMune 400 SPF50+",p:"€18–22",d:"High-protection sunscreen with a next-gen UVA filter and elegant textures.",s:"Standard Tinted if you want the tinted version; complexion Fair/Light.",w:"Better formula — EU sun filters (Mexoryl/Tinosorb) aren't FDA-approved, so this isn't sold in the US."},
+      {n:"Avène DermAbsolu Cream",p:"€30–38",d:"Firming, radiance-boosting anti-aging day cream for mature skin.",w:"Cheaper than in the US."},
+      {n:"La Roche-Posay Rosaliac AR Serum",p:"€22–28",d:"Targets persistent facial redness and visible vessels.",w:"Cheaper than in the US."}]},
     {title:"👍 Recommended",items:[
-      {n:"SVR Ampoule Lift A",p:"€25–32",d:"Firming, lifting anti-aging concentrate."},
-      {n:"Caudalie eye cream (Premier Cru or Resveratrol-Lift)",p:"€35–50",d:"Anti-aging eye care to smooth and firm — pick one, not both."},
-      {n:"Embryolisse Lait-Crème",p:"€12–18",d:"Cult multi-use moisturiser / primer / makeup remover."}]},
+      {n:"SVR Ampoule Lift A",p:"€25–32",d:"Firming, lifting anti-aging concentrate.",w:"Hard to find in the US."},
+      {n:"Caudalie eye cream (Premier Cru or Resveratrol-Lift)",p:"€35–50",d:"Anti-aging eye care to smooth and firm — pick one, not both.",w:"Much cheaper than the US Sephora price."},
+      {n:"Embryolisse Lait-Crème",p:"€12–18",d:"Cult multi-use moisturiser / primer / makeup remover.",w:"A few euros here vs ~$28 in the US."}]},
     {title:"🧴 Body",items:[
-      {n:"La Roche-Posay Lipikar Baume AP+M",p:"€12–18",d:"Rich body balm for very dry, mature skin."},
-      {n:"Caudalie Vinotherapist Body Butter",p:"€20–26",d:"Deep body hydration without feeling greasy."},
-      {n:"Nuxe Huile Prodigieuse",p:"€18–28",d:"Iconic multi-use dry oil for body and hair."},
-      {n:"SVR Xérial 10 Body Lotion",p:"€12–16",d:"Smooths rough, dry skin on arms and legs."},
-      {n:"Avène Cold Cream Hand Cream",p:"€6–9",d:"Protective travel hand cream for dry hands."}]},
+      {n:"La Roche-Posay Lipikar Baume AP+M",p:"€12–18",d:"Rich body balm for very dry, mature skin.",w:"Cheaper than in the US."},
+      {n:"Caudalie Vinotherapist Body Butter",p:"€20–26",d:"Deep body hydration without feeling greasy.",w:"Much cheaper than the US Sephora price."},
+      {n:"Nuxe Huile Prodigieuse",p:"€18–28",d:"Iconic multi-use dry oil for body and hair.",w:"Cheaper here — a prestige price in the US."},
+      {n:"SVR Xérial 10 Body Lotion",p:"€12–16",d:"Smooths rough, dry skin on arms and legs.",w:"Hard to find in the US."},
+      {n:"Avène Cold Cream Hand Cream",p:"€6–9",d:"Protective travel hand cream for dry hands.",w:"Cheaper than in the US."}]},
     {title:"💇 Hair — blonde, thick",items:[
-      {n:"Klorane Prickly Pear Shampoo (+ conditioner)",p:"€8–12 ea",d:"Softness and shine for dry or dull blonde hair."},
-      {n:"René Furterer Okara Blond Shampoo",p:"€18–24",d:"Brightens natural/highlighted blonde and prevents dullness."},
-      {n:"Klorane Oat Dry Shampoo",p:"€8–11",d:"Freshens between washes and adds texture."}]},
+      {n:"Klorane Prickly Pear Shampoo (+ conditioner)",p:"€8–12 ea",d:"Softness and shine for dry or dull blonde hair.",w:"Hard to find in the US."},
+      {n:"René Furterer Okara Blond Shampoo",p:"€18–24",d:"Brightens natural/highlighted blonde and prevents dullness.",w:"Hard to find in the US."},
+      {n:"Klorane Oat Dry Shampoo",p:"€8–11",d:"Freshens between washes and adds texture.",w:"Hard to find in the US."}]},
     {title:"🦶 Feet & tired legs",items:[
-      {n:"SVR Xérial 30 Foot Cream",p:"€10–14",d:"High-urea cream for very dry, calloused feet — nightly on heels."},
-      {n:"Uriage Bariéderm cracks ointment / stick",p:"€9–13",d:"Repairs split, cracked heels; keep for painful cracks."},
-      {n:"Akileïne relaxing foot / heavy-legs gel",p:"€10–15",d:"Cooling relief after long walking days."}]},
+      {n:"SVR Xérial 30 Foot Cream",p:"€10–14",d:"High-urea cream for very dry, calloused feet — nightly on heels.",w:"Hard to find in the US."},
+      {n:"Uriage Bariéderm cracks ointment / stick",p:"€9–13",d:"Repairs split, cracked heels; keep for painful cracks.",w:"Hard to find in the US."},
+      {n:"Akileïne relaxing foot / heavy-legs gel",p:"€10–15",d:"Cooling relief after long walking days.",w:"Hard to find in the US."}]},
     {title:"💋 Lips",items:[
-      {n:"Nuxe Rêve de Miel Lip Balm",p:"€10–13",d:"Intensive honey balm for very dry lips — best overnight."}]}
+      {n:"Nuxe Rêve de Miel Lip Balm",p:"€10–13",d:"Intensive honey balm for very dry lips — best overnight.",w:"Cheaper here — a prestige price in the US."}]}
   ]},
   {id:"you",label:"Meghan",flag:"🇫🇷",accent:"#A8423C",note:"Strasbourg pharmacy — Meghan's curated list",tiers:[
     {title:"⭐⭐⭐⭐⭐ Don't leave France without these",items:[
-      {n:"La Roche-Posay Anthelios UVMune 400 SPF50+",p:"€18–22",d:"Next-gen high-protection sunscreen with superb textures.",s:"Standard Tinted, or Invisible Fluid untinted; complexion light neutral/cool."},
-      {n:"Caudalie Vinoperfect Serum",p:"€45–50",d:"Brightening serum for dark spots and even tone."},
-      {n:"Embryolisse Lait-Crème",p:"€12–18",d:"Cult multi-use moisturiser / primer."},
-      {n:"Nuxe Rêve de Miel Lip Balm",p:"€10–13",d:"Intensive balm for dry lips, ideal overnight."},
-      {n:"SVR Xérial 30 Foot Cream",p:"€10–14",d:"High-urea smoothing cream for calloused feet."}]},
+      {n:"La Roche-Posay Anthelios UVMune 400 SPF50+",p:"€18–22",d:"Next-gen high-protection sunscreen with superb textures.",s:"Standard Tinted, or Invisible Fluid untinted; complexion light neutral/cool.",w:"Better formula — EU sun filters (Mexoryl/Tinosorb) aren't FDA-approved, so this isn't sold in the US."},
+      {n:"Caudalie Vinoperfect Serum",p:"€45–50",d:"Brightening serum for dark spots and even tone.",w:"Much cheaper than the US Sephora price."},
+      {n:"Embryolisse Lait-Crème",p:"€12–18",d:"Cult multi-use moisturiser / primer.",w:"A few euros here vs ~$28 in the US."},
+      {n:"Nuxe Rêve de Miel Lip Balm",p:"€10–13",d:"Intensive balm for dry lips, ideal overnight.",w:"Cheaper here — a prestige price in the US."},
+      {n:"SVR Xérial 30 Foot Cream",p:"€10–14",d:"High-urea smoothing cream for calloused feet.",w:"Hard to find in the US."}]},
     {title:"⭐⭐⭐⭐ Worth buying",items:[
-      {n:"Avène Cleanance Comedomed",p:"€18–24",d:"Anti-blemish concentrate for oily/blemish-prone skin."},
-      {n:"Bioderma Sébium Pore Refiner",p:"€14–18",d:"Smooths and minimises the look of pores."},
-      {n:"Ducray Anaphase+ Shampoo",p:"€12–16",d:"Supportive shampoo for thinning hair / active shedding."},
-      {n:"La Roche-Posay Tinted Fluid",p:"€18–22",d:"Tinted mineral sunscreen fluid — skip if you take the tinted sunscreen above.",s:"Standard Tinted; complexion light neutral/cool."},
-      {n:"Bourjois Mascara",p:"€10–13",d:"Everyday mascara, usually cheaper than in the US.",s:"Black (Noir); Brown optional."}]},
+      {n:"Avène Cleanance Comedomed",p:"€18–24",d:"Anti-blemish concentrate for oily/blemish-prone skin.",w:"Cheaper than in the US."},
+      {n:"Bioderma Sébium Pore Refiner",p:"€14–18",d:"Smooths and minimises the look of pores.",w:"Cheaper here; still spotty in US stores."},
+      {n:"Ducray Anaphase+ Shampoo",p:"€12–16",d:"Supportive shampoo for thinning hair / active shedding.",w:"Hard to find in the US."},
+      {n:"La Roche-Posay Tinted Fluid",p:"€18–22",d:"Tinted mineral sunscreen fluid — skip if you take the tinted sunscreen above.",s:"Standard Tinted; complexion light neutral/cool.",w:"EU tinted mineral formula not sold in the US."},
+      {n:"Bourjois Mascara",p:"€10–13",d:"Everyday mascara, usually cheaper than in the US.",s:"Black (Noir); Brown optional.",w:"Cheaper than in the US."}]},
     {title:"⭐⭐ Nice if you have room / budget",items:[
-      {n:"A313 Cream",p:"€8–12",d:"Vitamin-A pommade (retinol-like) — start slowly, not equal to prescription tretinoin."},
-      {n:"Nuxe Huile Prodigieuse",p:"€18–28",d:"Multi-use dry oil for body and hair."},
-      {n:"René Furterer Triphasic",p:"€30–45",d:"Targeted anti-shedding scalp treatment (Reactional or Progressive)."}]},
+      {n:"A313 Cream",p:"€8–12",d:"Vitamin-A pommade (retinol-like) — start slowly, not equal to prescription tretinoin.",w:"Not sold in the US — a French-pharmacy exclusive."},
+      {n:"Nuxe Huile Prodigieuse",p:"€18–28",d:"Multi-use dry oil for body and hair.",w:"Cheaper here — a prestige price in the US."},
+      {n:"René Furterer Triphasic",p:"€30–45",d:"Targeted anti-shedding scalp treatment (Reactional or Progressive).",w:"Hard to find in the US."}]},
     {title:"🧴 Body (from your guide)",items:[
-      {n:"La Roche-Posay Lipikar Baume AP+M",p:"€12–18",d:"Rich body balm for dry skin and after sun."},
-      {n:"Bioderma Atoderm Shower Oil",p:"€10–16",d:"Gentle cleansing shower oil that leaves skin soft."},
-      {n:"Avène XeraCalm A.D Balm",p:"€18–24",d:"Soothes irritated or very dry skin."},
-      {n:"Bioderma Sensibio Micellar Water",p:"€10–16",d:"Gentle makeup remover / cleanser (grab a small size — it's heavy)."},
-      {n:"Caudalie Thé des Vignes Body Oil",p:"€20–28",d:"Light luxury body oil for evenings or extra hydration."}]},
+      {n:"La Roche-Posay Lipikar Baume AP+M",p:"€12–18",d:"Rich body balm for dry skin and after sun.",w:"Cheaper than in the US."},
+      {n:"Bioderma Atoderm Shower Oil",p:"€10–16",d:"Gentle cleansing shower oil that leaves skin soft.",w:"Cheaper here; still spotty in US stores."},
+      {n:"Avène XeraCalm A.D Balm",p:"€18–24",d:"Soothes irritated or very dry skin.",w:"Cheaper than in the US."},
+      {n:"Bioderma Sensibio Micellar Water",p:"€10–16",d:"Gentle makeup remover / cleanser (grab a small size — it's heavy).",w:"Cheaper here; still spotty in US stores."},
+      {n:"Caudalie Thé des Vignes Body Oil",p:"€20–28",d:"Light luxury body oil for evenings or extra hydration.",w:"Much cheaper than the US Sephora price."}]},
     {title:"🦶 Foot extra",items:[
-      {n:"SVR Xérial 50 Extreme",p:"€12–16",d:"Stronger urea for stubborn calluses — spot-use only."}]}
+      {n:"SVR Xérial 50 Extreme",p:"€12–16",d:"Stronger urea for stubborn calluses — spot-use only.",w:"Hard to find in the US."}]}
   ]},
   {id:"taylor",label:"Taylor",flag:"🇫🇷",accent:"#A8423C",note:"Strasbourg pharmacy — combination skin, pores & prevention",tiers:[
     {title:"⭐ Top priorities",items:[
-      {n:"La Roche-Posay Anthelios UVMune 400 Invisible Fluid SPF50+",p:"€18–22",d:"Ultra-light, invisible high-protection sunscreen — ideal for combination skin."},
-      {n:"Caudalie Vinoperfect Serum",p:"€45–50",d:"Brightens, prevents dark spots and gives a healthy glow."},
-      {n:"Bioderma Sébium Pore Refiner",p:"€14–18",d:"Instantly blurs pores and controls oil — great under makeup."},
-      {n:"Embryolisse Lait-Crème Concentré",p:"€12–18",d:"Rich night moisturiser that doubles as a makeup primer."},
-      {n:"Nuxe Rêve de Miel Lip Balm",p:"€10–13",d:"Intensive honey balm for dry lips, best overnight."}]},
+      {n:"La Roche-Posay Anthelios UVMune 400 Invisible Fluid SPF50+",p:"€18–22",d:"Ultra-light, invisible high-protection sunscreen — ideal for combination skin.",w:"Better formula — EU sun filters (Mexoryl/Tinosorb) aren't FDA-approved, so this isn't sold in the US."},
+      {n:"Caudalie Vinoperfect Serum",p:"€45–50",d:"Brightens, prevents dark spots and gives a healthy glow.",w:"Much cheaper than the US Sephora price."},
+      {n:"Bioderma Sébium Pore Refiner",p:"€14–18",d:"Instantly blurs pores and controls oil — great under makeup.",w:"Cheaper here; still spotty in US stores."},
+      {n:"Embryolisse Lait-Crème Concentré",p:"€12–18",d:"Rich night moisturiser that doubles as a makeup primer.",w:"A few euros here vs ~$28 in the US."},
+      {n:"Nuxe Rêve de Miel Lip Balm",p:"€10–13",d:"Intensive honey balm for dry lips, best overnight.",w:"Cheaper here — a prestige price in the US."}]},
     {title:"👍 Nice additions (face)",items:[
-      {n:"La Roche-Posay Effaclar Duo(+)",p:"€12–16",d:"Targets and helps prevent occasional breakouts."},
-      {n:"Avène Cleanance Comedomed",p:"€18–24",d:"For occasional hormonal blemishes; smooths oily skin."},
-      {n:"Bioderma Sensibio Micellar Water",p:"€10–16",d:"Gentle cleanser and makeup remover (grab a small size — it's heavy)."}]},
+      {n:"La Roche-Posay Effaclar Duo(+)",p:"€12–16",d:"Targets and helps prevent occasional breakouts.",w:"Cheaper than in the US."},
+      {n:"Avène Cleanance Comedomed",p:"€18–24",d:"For occasional hormonal blemishes; smooths oily skin.",w:"Cheaper than in the US."},
+      {n:"Bioderma Sensibio Micellar Water",p:"€10–16",d:"Gentle cleanser and makeup remover (grab a small size — it's heavy).",w:"Cheaper here; still spotty in US stores."}]},
     {title:"☀️ Sunscreen options",items:[
-      {n:"LRP Anthelios UVMune 400 Oil Control Gel-Cream",p:"€18–22",d:"Mattifying SPF50+ for the oily T-zone."},
-      {n:"Avène Ultra Fluid SPF50+",p:"€14–18",d:"Light, fast-absorbing daily face sunscreen."},
-      {n:"Bioderma Photoderm Aquafluide SPF50+",p:"€16–20",d:"Watery-light SPF50+ with a fresh finish."}]},
+      {n:"LRP Anthelios UVMune 400 Oil Control Gel-Cream",p:"€18–22",d:"Mattifying SPF50+ for the oily T-zone.",w:"Better formula — EU sun filters (Mexoryl/Tinosorb) aren't FDA-approved, so this isn't sold in the US."},
+      {n:"Avène Ultra Fluid SPF50+",p:"€14–18",d:"Light, fast-absorbing daily face sunscreen.",w:"Better formula — EU sun filters (Mexoryl/Tinosorb) aren't FDA-approved, so this isn't sold in the US."},
+      {n:"Bioderma Photoderm Aquafluide SPF50+",p:"€16–20",d:"Watery-light SPF50+ with a fresh finish.",w:"Better formula — EU sun filters (Mexoryl/Tinosorb) aren't FDA-approved, so this isn't sold in the US."}]},
     {title:"👁 Under-eye care",items:[
-      {n:"Caudalie Resveratrol-Lift Eye Gel Cream",p:"€40–48",d:"De-puffs, smooths fine lines and brightens under-eyes."},
-      {n:"La Roche-Posay Hyalu B5 Eyes",p:"€30–36",d:"Hydrating eye serum that smooths fine lines."}]},
+      {n:"Caudalie Resveratrol-Lift Eye Gel Cream",p:"€40–48",d:"De-puffs, smooths fine lines and brightens under-eyes.",w:"Much cheaper than the US Sephora price."},
+      {n:"La Roche-Posay Hyalu B5 Eyes",p:"€30–36",d:"Hydrating eye serum that smooths fine lines.",w:"Cheaper than in the US."}]},
     {title:"👁 Eye patches — ask (limited in FR pharmacies)",items:[
-      {n:"Talika Eye Therapy Patches",p:"€30–40",d:"Reusable silicone patches for puffiness."},
-      {n:"Patchology FlashPatch (if stocked)",p:"€12–20",d:"Single-use brightening patches — great before events."},
-      {n:"Filorga Optim-Eyes Patches (if available)",p:"€30–40",d:"Luxury option, occasionally stocked. No luck? A good eye cream is the better buy."}]},
+      {n:"Talika Eye Therapy Patches",p:"€30–40",d:"Reusable silicone patches for puffiness.",w:"Hard to find in the US."},
+      {n:"Patchology FlashPatch (if stocked)",p:"€12–20",d:"Single-use brightening patches — great before events.",w:"Hard to find in the US."},
+      {n:"Filorga Optim-Eyes Patches (if available)",p:"€30–40",d:"Luxury option, occasionally stocked. No luck? A good eye cream is the better buy.",w:"Hard to find in the US."}]},
     {title:"🧴 Body",items:[
-      {n:"La Roche-Posay Lipikar Baume AP+M",p:"€12–18",d:"Rich body balm for dry skin."},
-      {n:"Bioderma Atoderm Shower Oil",p:"€10–16",d:"Gentle cleansing shower oil."},
-      {n:"Nuxe Huile Prodigieuse Dry Oil",p:"€18–28",d:"Iconic multi-use dry oil for body and hair."}]},
+      {n:"La Roche-Posay Lipikar Baume AP+M",p:"€12–18",d:"Rich body balm for dry skin.",w:"Cheaper than in the US."},
+      {n:"Bioderma Atoderm Shower Oil",p:"€10–16",d:"Gentle cleansing shower oil.",w:"Cheaper here; still spotty in US stores."},
+      {n:"Nuxe Huile Prodigieuse Dry Oil",p:"€18–28",d:"Iconic multi-use dry oil for body and hair.",w:"Cheaper here — a prestige price in the US."}]},
     {title:"💇 Hair",items:[
-      {n:"Klorane Prickly Pear Shampoo (+ conditioner)",p:"€8–12 ea",d:"Softness and shine for dry or dull hair."},
-      {n:"Klorane Oat Dry Shampoo",p:"€8–11",d:"Freshens between washes."}]},
+      {n:"Klorane Prickly Pear Shampoo (+ conditioner)",p:"€8–12 ea",d:"Softness and shine for dry or dull hair.",w:"Hard to find in the US."},
+      {n:"Klorane Oat Dry Shampoo",p:"€8–11",d:"Freshens between washes.",w:"Hard to find in the US."}]},
     {title:"🦶 Feet",items:[
-      {n:"SVR Xérial 30 Foot Cream",p:"€10–14",d:"High-urea cream for calloused, dry feet."},
-      {n:"Akileïne Tired Legs & Feet Gel",p:"€10–15",d:"Cooling relief after long sightseeing days (optional)."}]}
+      {n:"SVR Xérial 30 Foot Cream",p:"€10–14",d:"High-urea cream for calloused, dry feet.",w:"Hard to find in the US."},
+      {n:"Akileïne Tired Legs & Feet Gel",p:"€10–15",d:"Cooling relief after long sightseeing days (optional).",w:"Hard to find in the US."}]}
   ]},
   {id:"swiss",label:"Switzerland",flag:"🇨🇭",accent:"#2F6B4F",note:"Zürich — buy chocolate on your last day for freshness",tiers:[
     {title:"🍫 Chocolate",items:[
@@ -442,9 +442,9 @@ const SHOPPING={lists:[
       {n:"Cheese fondue packet",p:"CHF 8–14",d:"Ready-blended fondue to make at home."},
       {n:"Vacuum-packed cheese",p:"CHF varies",d:"Gruyère / Emmental sealed for travel."}]},
     {title:"💄 Beauty",items:[
-      {n:"Weleda Skin Food",p:"CHF 10–18",d:"Rich cult moisturiser — cheaper in Switzerland."},
-      {n:"Curaprox toothbrush",p:"CHF 5–9",d:"Ultra-soft Swiss toothbrush."},
-      {n:"Swissdent toothpaste",p:"CHF 10–18",d:"Premium gentle whitening toothpaste."}]},
+      {n:"Weleda Skin Food",p:"CHF 10–18",d:"Rich cult moisturiser — cheaper in Switzerland.",w:"Cheaper in Switzerland than the US."},
+      {n:"Curaprox toothbrush",p:"CHF 5–9",d:"Ultra-soft Swiss toothbrush.",w:"Swiss brand — cheaper here."},
+      {n:"Swissdent toothpaste",p:"CHF 10–18",d:"Premium gentle whitening toothpaste.",w:"Swiss brand — cheaper here."}]},
     {title:"🔪 Practical",items:[
       {n:"Victorinox Swiss Army knife",p:"CHF 20–60",d:"The classic — pack it in checked luggage."},
       {n:"SIGG water bottle",p:"CHF 20–30",d:"Iconic Swiss aluminium bottle."}]}
@@ -745,6 +745,7 @@ function shopBody(){
   lists.forEach(l=>{ html+='<button class="'+(l.id===cur.id?"on":"")+'" onclick="switchShop(\''+l.id+'\')">'+esc(l.label)+'</button>'; });
   html+='</div>';
   html+='<div class="note-soft" style="margin:-2px 0 12px">'+esc(cur.note)+'. Tap an item for price &amp; details.</div>';
+  if(cur.id!=="swiss") html+='<div class="card pad note-soft" style="margin-bottom:12px">💡 Maximising space &amp; budget? Spend first on European <b>sunscreens</b> and anything hard to find or much pricier in the US — those are the biggest wins over shopping at home. Tap any item to see why it\'s worth buying here.</div>';
   html+='<div class="card pad" style="margin-bottom:14px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><span style="font-weight:600;font-size:14px">'+esc(cur.label)+'</span><span class="pricetag" id="buyOverall">'+done+' / '+total+'</span></div><div class="progress"><i id="buyBar" style="width:'+(total?Math.round(done/total*100):0)+'%"></i></div></div>';
   cur.tiers.forEach((t,ti)=>{
     html+='<div class="tier-head">'+esc(t.title)+'</div>';
@@ -754,6 +755,7 @@ function shopBody(){
       let det=''; if(it.p)det+='<span class="pricetag">'+esc(it.p)+'</span> ';
       if(it.d)det+=esc(it.d);
       if(it.s)det+=' <b>Shade:</b> '+esc(it.s);
+      if(it.w)det+='<div style="margin-top:6px;color:var(--accent);font-size:12px">💡 <b>Why buy in Europe:</b> '+esc(it.w)+'</div>';
       html+='<div class="buydetails">'+det+'</div>';
     });
   });
